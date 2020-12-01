@@ -21,15 +21,19 @@ section {
   color: #fff;
 }
 
-.hover-box h2{
+.hover-box h2 {
   position: absolute;
   bottom: -4em;
   width: 100%;
   padding: 1rem;
   margin: 0;
   text-align: center;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5));
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5));
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, .9);
+  transition: all .2s linear;
+}
+
+.hover-box-caption {
   transition: all .2s linear;
 }
 
@@ -43,7 +47,7 @@ section {
   transition: all .2s linear;
 }
 
-.hove-box:hover img,
+.hover-box:hover img,
 .hover-box:focus img {
   filter: grayscale(0);
   transform: scale(1.1);
